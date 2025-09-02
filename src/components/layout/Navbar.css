@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'UAFSans-SemiBold';
+  src: url('../assets/fonts/UAFSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    background-color: rgba(55, 55, 55, 0.250);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.268);
+    font-family: 'UAFSans-SemiBold', sans-serif;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li{
+    font-size: clamp(14px, 2vw, 17px);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.nav__links a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+}
+
+.nav__links a:hover{
+    color: #c1c1c1
+}
+
+.logo-text{
+    color: white;
+}
+.logo-text-main{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo{/* ! ! */
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 5px 2%;
+    }
+    .logo-text{
+        font-size: clamp(12px, 2vw, 17px);
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav__links{
+        padding-top: 0.5rem;
+    }
+    .menu-icon{
+        justify-content: space-between;
+        
+    }
+    
+}
+
+/* ============ BURGER =========== */
+.menu-toggle{
+    display: none;
+}
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+}
+.menu-icon span{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: 0.3s;
+}
+nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    
+    text-align: center;
+}
+.menu-toggle:checked ~ nav {
+    display: block;
+}
+
+/* ============= DESKTOP ============ */
+@media (min-width: 768px){
+    .menu-icon{
+        display: none;
+    }
+    nav{
+        display: inline !important;
+        position: static;
+    }
+    .nav__links{
+        display: flex;
+        gap: 1rem;
+    }
+    .nav__links li{
+        border: none;
+        padding: 0;
+    }
+}

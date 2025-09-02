@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'UAFSans-Regular';
+  src: url('../assets/fonts/UAFSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "UAFSans-Regular";
+}
+
+
+
+

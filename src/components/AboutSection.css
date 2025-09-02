@@ -1,0 +1,47 @@
+.section_about{
+    background-image: url('./img/layout.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+}
+.about {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.title_about {
+  display: inline-block;
+  border-bottom: 3px solid black;
+}
+
+.image_text{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 70px;
+}
+
+.about_institute{
+    padding-left: 100px;
+    width: 600px;
+    height: auto;
+}
+
+.about_picture{
+    width: 600px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+  .image_text{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .about_picture,
+  .about_institute{
+    width: 100%;
+    padding-left: 0;
+  }
+}

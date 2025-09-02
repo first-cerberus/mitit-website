@@ -1,0 +1,22 @@
+.section_specialties {
+  background-image: url('./img/layout.jpg');
+}
+
+.spec {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.specialties_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+  gap: 20px; /* расстояние между карточками */
+  max-width: 1200px;
+  margin: 0 auto; /* центрируем по горизонтали */
+  padding: 50px 0;
+}
+
+.title_spec {
+  display: inline-block;
+  border-bottom: 3px solid black;
+}
